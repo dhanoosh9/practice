@@ -10,12 +10,8 @@ public class LoginPageTest extends BaseClass {
 	@Parameters({"username","password"})
 	@Test
 	public void signintest(String username,String password) {
-		LoginPage signin = new LoginPage();
-		signin.Sigin();
-		signin.enterEmail(username);
-		signin.enterPasswd(password);
-		signin.clickSubmit();
-		signin.Logout();
+		LoginPage.Sigin(username,password);
+
 	}
 	
 }

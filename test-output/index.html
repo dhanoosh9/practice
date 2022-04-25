@@ -156,14 +156,14 @@
                   <span class="method-name">carttest</span>
                   <span class="parameters">(wexom38833@ishop2k.com, test123)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class=&apos;login&apos;]&quot;}
-  (Session info: chrome=100.0.4896.75)
+  (Session info: chrome=100.0.4896.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-19NCAKV&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a07abdb907de2e4b30ba5ba58ee6c04d, findElement {using=css selector, value=[class=&apos;login&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63992/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
+Command: [31a24113899389de4ead4f0df2fbc75b, findElement {using=css selector, value=[class=&apos;login&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57764/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31a24113899389de4ead4f0df2fbc75b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -175,8 +175,8 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at page.LoginPage.Sigin(LoginPage.java:18)
-	at test.CartTest.carttest(CartTest.java:16)
+	at test.BaseClass.login(BaseClass.java:70)
+	at test.CartTest.carttest(CartTest.java:15)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -196,15 +196,15 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
                   </a> <!-- carttest(wexom38833@ishop2k.com, test123) -->
                   <span class="method-name">carttest</span>
                   <span class="parameters">(wexom38833@ishop2k.com, test123)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;add_to_cart&quot;]/button/span&quot;}
-  (Session info: chrome=100.0.4896.75)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class=&apos;login&apos;]&quot;}
+  (Session info: chrome=100.0.4896.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-19NCAKV&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a07abdb907de2e4b30ba5ba58ee6c04d, findElement {using=xpath, value=//*[@id=&quot;add_to_cart&quot;]/button/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63992/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
+Command: [31a24113899389de4ead4f0df2fbc75b, findElement {using=css selector, value=[class=&apos;login&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57764/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31a24113899389de4ead4f0df2fbc75b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -216,8 +216,8 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at page.Cart.&lt;init&gt;(Cart.java:27)
-	at test.CartTest.carttest(CartTest.java:24)
+	at test.BaseClass.login(BaseClass.java:70)
+	at test.CartTest.carttest(CartTest.java:15)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -229,30 +229,19 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
                   </a> <!-- carttest(wexom38833@ishop2k.com, test123) -->
                   <span class="method-name">carttest</span>
                   <span class="parameters">(wexom38833@ishop2k.com, test123)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class=&apos;login&apos;]&quot;}
-  (Session info: chrome=100.0.4896.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=\&quot;add_to_cart\&quot;]/button/span (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-19NCAKV&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a07abdb907de2e4b30ba5ba58ee6c04d, findElement {using=css selector, value=[class=&apos;login&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63992/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at page.LoginPage.Sigin(LoginPage.java:18)
-	at test.CartTest.carttest(CartTest.java:16)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57764/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31a24113899389de4ead4f0df2fbc75b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at test.BaseClass.click(BaseClass.java:78)
+	at page.Cart.Item(Cart.java:29)
+	at test.CartTest.carttest(CartTest.java:19)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -263,14 +252,14 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
                   <span class="method-name">carttest</span>
                   <span class="parameters">(wexom38833@ishop2k.com, test123)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class=&apos;login&apos;]&quot;}
-  (Session info: chrome=100.0.4896.75)
+  (Session info: chrome=100.0.4896.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-19NCAKV&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a07abdb907de2e4b30ba5ba58ee6c04d, findElement {using=css selector, value=[class=&apos;login&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63992/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
+Command: [31a24113899389de4ead4f0df2fbc75b, findElement {using=css selector, value=[class=&apos;login&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\dhano\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57764/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31a24113899389de4ead4f0df2fbc75b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -282,8 +271,8 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at page.LoginPage.Sigin(LoginPage.java:18)
-	at test.CartTest.carttest(CartTest.java:16)
+	at test.BaseClass.login(BaseClass.java:70)
+	at test.CartTest.carttest(CartTest.java:15)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -306,7 +295,7 @@ Session ID: a07abdb907de2e4b30ba5ba58ee6c04d
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;username&quot; value=&quot;wexom38833@ishop2k.com&quot;/&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;utilities.ListnerClass&quot;/&gt;
+    &lt;listener class-name=&quot;utilities.ListenerClass&quot;/&gt;
     &lt;listener class-name=&quot;utilities.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
@@ -355,24 +344,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'carttest')
 data.setCell(0, 2, 'test.CartTest')
-data.setCell(0, 3, 13526);
+data.setCell(0, 3, 69005);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'carttest')
 data.setCell(1, 2, 'test.CartTest')
-data.setCell(1, 3, 24);
+data.setCell(1, 3, 20);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'carttest')
 data.setCell(2, 2, 'test.CartTest')
-data.setCell(2, 3, 23);
+data.setCell(2, 3, 20);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'carttest')
 data.setCell(3, 2, 'test.CartTest')
-data.setCell(3, 3, 18);
+data.setCell(3, 3, 20);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -405,25 +394,25 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">carttest(wexom38833@ishop2k.com, test123)</span>
-                <span class="method-start">19446 ms</span>
+                <span class="method-start">20589 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">carttest(wexom38833@ishop2k.com, test123)</span>
-                <span class="method-start">33002 ms</span>
+                <span class="method-start">89761 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">carttest(wexom38833@ishop2k.com, test123)</span>
-                <span class="method-start">33031 ms</span>
+                <span class="method-start">89784 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">carttest(wexom38833@ishop2k.com, test123)</span>
-                <span class="method-start">33058 ms</span>
+                <span class="method-start">89813 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">33592 ms</span>
+                <span class="method-start">90137 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

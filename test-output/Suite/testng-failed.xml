@@ -6,7 +6,7 @@
   <parameter name="browser" value="chrome"/>
   <parameter name="username" value="wexom38833@ishop2k.com"/>
   <listeners>
-    <listener class-name="utilities.ListnerClass"/>
+    <listener class-name="utilities.ListenerClass"/>
     <listener class-name="utilities.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">

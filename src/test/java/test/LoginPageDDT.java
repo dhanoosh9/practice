@@ -11,12 +11,7 @@ public class LoginPageDDT extends BaseClass{
 	
 	@Test(dataProvider="LoginData")
 	public void signintestddt(String username,String password) {
-		LoginPage signin = new LoginPage();
-		signin.Sigin();
-		signin.enterEmail(username);
-		signin.enterPasswd(password);
-		signin.clickSubmit();
-		signin.Logout();
+		LoginPage.Sigin(username,password);
 	}
 	
 	@DataProvider(name = "LoginData")

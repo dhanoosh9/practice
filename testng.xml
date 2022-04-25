@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="utilities.ListnerClass"></listener>
+		<listener class-name="utilities.ListenerClass"></listener>
 		<listener class-name="utilities.AnnotationTransformer"></listener>
 	</listeners>
 	<parameter name="username" value="wexom38833@ishop2k.com"></parameter>
@@ -14,6 +14,9 @@
 		<!-- <class name="test.LoginPageDDT"></class> 
 		<class name="test.HomePageTest"></class>
 		<class name="test.LoginPageTest"></class>
+		<class name="test.CreateAccountPageTest"></class>
+		<class name="test.ContactInfoPageTest"></class>
+		<class name="test.CartTest"></class>
 -->
 		<class name="test.CartTest"></class>
 	</classes>

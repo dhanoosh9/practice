@@ -13,7 +13,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
-public class ListnerClass extends ScreenShotMethod implements ITestListener {
+public class ListenerClass extends ScreenShotMethod implements ITestListener {
 
 	ExtentReports extent = new ExtentReports();
 	

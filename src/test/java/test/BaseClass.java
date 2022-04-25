@@ -1,10 +1,15 @@
 package test;
 
+import java.time.Duration;
+
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -19,6 +24,11 @@ import com.aventstack.extentreports.ExtentTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
+	
+	public static By signinbtn = By.cssSelector("[class='login']");
+	public static By email = By.xpath("//input[@id='email']");
+	public static By passwd = By.cssSelector("[id=passwd]");
+	public static By submit = By.cssSelector("[id=SubmitLogin]");
 	
 	public static WebDriver driver;
 	public static WebDriverWait waitE;
@@ -54,6 +64,33 @@ public class BaseClass {
 	public static String randomNum() {
 		String generatedstring2 = RandomStringUtils.randomNumeric(10);
 		return generatedstring2;
+	}
+	
+	public static void login(String Username, String Password) {
+		driver.findElement(signinbtn).click();
+		driver.findElement(email).sendKeys(Username);
+		driver.findElement(passwd).sendKeys(Password);
+		driver.findElement(submit).click();
+	}
+	
+	public static void click(By element) {
+		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
+		waitE.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
+	
+	public static void click(WebElement element) {
+		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
+		waitE.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
+	
+	public static void sendKeys(By element,String text) {
+		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
+		waitE.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(text);
+	}
+	
+	public static void sendKeys(WebElement element,String text) {
+		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
+		waitE.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(text);
 	}
 	
 	@AfterClass
