@@ -18,7 +18,7 @@
 		<class name="test.ContactInfoPageTest"></class>
 		<class name="test.CartTest"></class>
 -->
-		<class name="test.CartTest"></class>
+		<class name="test.CreateAccountPageTest"></class>
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

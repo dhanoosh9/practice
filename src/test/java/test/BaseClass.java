@@ -73,21 +73,25 @@ public class BaseClass {
 		driver.findElement(submit).click();
 	}
 	
+	//Click method with by element
 	public static void click(By element) {
 		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
 		waitE.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
 	
+	//Click method with web element element
 	public static void click(WebElement element) {
 		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
 		waitE.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
 	
+	//Send keys method with by element
 	public static void sendKeys(By element,String text) {
 		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
 		waitE.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(text);
 	}
 	
+	//Send keys method with web element element
 	public static void sendKeys(WebElement element,String text) {
 		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
 		waitE.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(text);

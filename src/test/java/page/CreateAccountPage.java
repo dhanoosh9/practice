@@ -14,7 +14,7 @@ public class CreateAccountPage extends BaseClass {
 	public static By lastname = By.id("customer_lastname");
 	public static By password = By.cssSelector("[type=password]");
 	public static By create_btn = By.cssSelector("[id=SubmitCreate]");
-	
+	public static By optin = By.id("optin");
 	
 	public static void createAccount(String name, String lname, String Password) throws Exception {
 		click(signinbtn);
@@ -48,29 +48,31 @@ public class CreateAccountPage extends BaseClass {
 	public static void news() {
 		driver.findElement(By.name("newsletter")).click();
 		driver.findElement(By.id("optin")).click();
+//		click(By.name("newsletter"));
+//		click(optin);
 	}
 	
 	public static void afname(String text) {
 		WebElement firstname = driver.findElement(By.name("firstname"));
-		firstname.sendKeys(text);
+		sendKeys(firstname, text);
 	}
 	
 	public static void alname(String text) {
 		WebElement lastname = driver.findElement(By.id("lastname"));
-		lastname.sendKeys(text);
+		sendKeys(lastname, text);
 	}
 	
 	public static void company(String text) {
-		driver.findElement(By.id("company")).sendKeys(text);
+		sendKeys(By.id("company"), text);
 	}
 	
 	public static void address(String text) {
-		driver.findElement(By.name("address1")).sendKeys(text);
-		driver.findElement(By.name("address2")).sendKeys(text);
+		sendKeys(By.name("address1"), text);
+		sendKeys(By.name("address2"), text);
 	}
 	
 	public static void city(String text) {
-		driver.findElement(By.name("city")).sendKeys(text);
+		sendKeys(By.name("city"), text);
 	}
 	
 	public static void state() {
@@ -80,7 +82,7 @@ public class CreateAccountPage extends BaseClass {
 	}
 	
 	public static void Zip(String text) {
-		driver.findElement(By.id("postcode")).sendKeys(text);
+		sendKeys(By.id("postcode"), text);
 	}
 	
 	public static void Country() {
@@ -90,20 +92,20 @@ public class CreateAccountPage extends BaseClass {
 	}
 	
 	public static void Addinfo(String text) {
-		driver.findElement(By.name("other")).sendKeys(text);
+		sendKeys(By.name("other"), text);
 	}
 	
 	public static void Homephone() {
 		String hphone = randomNum();
-		driver.findElement(By.name("phone")).sendKeys(hphone);
+		sendKeys(By.name("phone"), hphone);
 	}
 	
 	public static void Mobilephone() {
 		String mphone = randomNum();
-		driver.findElement(By.id("phone_mobile")).sendKeys(mphone);
+		sendKeys(By.id("phone_mobile"), mphone);
 	}
 	
 	public static void register() {
-		driver.findElement(By.xpath("//span[contains(.,'Register')]")).click();
+		click(By.xpath("//span[contains(.,'Register')]"));
 	}
  }

@@ -11,13 +11,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.CartTest">
+      <class name="test.CreateAccountPageTest">
         <methods>
           <include name="setup"/>
+          <include name="createaccountpagetest"/>
           <include name="teardown"/>
-          <include name="carttest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.CartTest -->
+      </class> <!-- test.CreateAccountPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

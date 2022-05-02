@@ -49,7 +49,7 @@ public class Cart extends BaseClass{
 		
 		WebElement bankwire = driver.findElement(By.xpath("//a[contains(@class,'bankwire')]"));
 		click(bankwire);
-		System.out.println("Clicked on bnakwire button");
+		System.out.println("Clicked on bankwire button");
 		
 		WebElement confirm_order = driver.findElement(By.xpath("//span[contains(.,'I confirm my order')]"));
 		click(confirm_order);
