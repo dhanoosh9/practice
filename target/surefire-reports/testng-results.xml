@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18774" started-at="2022-05-13T17:56:05 IST" finished-at="2022-05-13T17:56:24 IST">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="18774" started-at="2022-05-13T17:56:05 IST" finished-at="2022-05-13T17:56:24 IST">
+      <class name="test.ContactInfoPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:test.ContactInfoPageTest@25a65b77]" name="setup" is-config="true" duration-ms="13766" started-at="2022-05-13T17:56:05 IST" finished-at="2022-05-13T17:56:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="cpage()[pri:0, instance:test.ContactInfoPageTest@25a65b77]" name="cpage" duration-ms="3897" started-at="2022-05-13T17:56:19 IST" finished-at="2022-05-13T17:56:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cpage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.ContactInfoPageTest@25a65b77]" name="teardown" is-config="true" duration-ms="847" started-at="2022-05-13T17:56:23 IST" finished-at="2022-05-13T17:56:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.ContactInfoPageTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

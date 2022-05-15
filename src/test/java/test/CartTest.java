@@ -14,7 +14,7 @@ public class CartTest extends BaseClass {
 	public void carttest(String username,String password) throws InterruptedException {
 		login(username,password);
 		System.out.println("Sign in completed");
-		HomePage.homeBtn();
+		click(HomePage.homebtn);
 		System.out.println("Home btn clicked");
 		Cart.Item();
 		System.out.println("Clicked on item and more button");

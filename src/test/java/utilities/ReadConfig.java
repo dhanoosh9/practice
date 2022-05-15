@@ -8,7 +8,7 @@ public class ReadConfig {
 	
 	static Properties prop;
 
-	 public void loadconfig() {
+	 public ReadConfig() {
 		 
 		 File src = new File("./Configuration/config.properties");
 		 
@@ -23,28 +23,29 @@ public class ReadConfig {
 		 }
 		
 	 }
+	 	
+	 	public String getbrowserName() {
+	 		String browserName = prop.getProperty("browser");
+	 		return browserName;
+	 	}
 	 
-
-	 
-	 public static String getApplicationURL() {
+	 	public String getApplicationURL() {
 			String url = prop.getProperty("baseURL");
 			return url;
 		}
 		
-		public static String getUsername() {
+		public String getUsername() {
 			String username = prop.getProperty("username");
 			return username;
 		}
 		
-		public static String getPassword() {
+		public String getPassword() {
 			String password = prop.getProperty("password");
 			return password;
 		}
 		
-		 public static void main(String[] args) {
-			 getApplicationURL();
-			 getUsername();
-			 getPassword();
-		 }
-	
+		public String getSearch_item() {
+			String item = prop.getProperty("search_item");
+			return item;
+		}
 }

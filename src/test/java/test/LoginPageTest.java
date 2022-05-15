@@ -3,15 +3,18 @@ package test;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import page.LoginPage;
+
 
 public class LoginPageTest extends BaseClass {
 	
 	@Parameters({"username","password"})
 	@Test
-	public void signintest(String username,String password) {
-		LoginPage.Sigin(username,password);
-
+	public static void login(String Username, String Password) {
+		click(signinbtn);
+		sendKeys(email,Username);
+		sendKeys(passwd,Password);
+		click(submit);
+		click(logout);
 	}
 	
 }

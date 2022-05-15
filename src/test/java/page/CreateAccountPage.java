@@ -3,7 +3,7 @@ package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+
 
 import test.BaseClass;
 
@@ -15,7 +15,7 @@ public class CreateAccountPage extends BaseClass {
 	public static By password = By.cssSelector("[type=password]");
 	public static By create_btn = By.cssSelector("[id=SubmitCreate]");
 	public static By optin = By.id("optin");
-	
+
 	public static void createAccount(String name, String lname, String Password) throws Exception {
 		click(signinbtn);
 		String Email = randomstring() + "@gmail.com";
@@ -29,20 +29,18 @@ public class CreateAccountPage extends BaseClass {
 	}
 	public static void days() {
 		WebElement days = driver.findElement(By.cssSelector("[id=days]"));
-		Select select = new Select(days);
-		select.selectByValue("4");
+		selectValue(days, "4");
+		
 	}
 	
 	public static void months() {
 		WebElement months = driver.findElement(By.cssSelector("[id=months]"));
-		Select select = new Select(months);
-		select.selectByIndex(2);
+		selectValue(months, "2");
 	}
 	
 	public static void years() {
 		WebElement years = driver.findElement(By.cssSelector("[id=years]"));
-		Select select = new Select(years);
-		select.selectByValue("2000");
+		selectValue(years, "2000");
 	}
 	
 	public static void news() {
@@ -77,8 +75,7 @@ public class CreateAccountPage extends BaseClass {
 	
 	public static void state() {
 		WebElement State = driver.findElement(By.name("id_state"));
-		Select select = new Select(State);
-		select.selectByValue("22");
+		selectValue(State, "22");
 	}
 	
 	public static void Zip(String text) {
@@ -87,8 +84,7 @@ public class CreateAccountPage extends BaseClass {
 	
 	public static void Country() {
 		WebElement country = driver.findElement(By.name("id_country"));
-		Select select = new Select(country);
-		select.selectByValue("21");
+		selectValue(country, "21");
 	}
 	
 	public static void Addinfo(String text) {

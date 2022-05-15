@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,6 +23,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.ReadConfig;
 
 public class BaseClass {
 	
@@ -29,14 +31,19 @@ public class BaseClass {
 	public static By email = By.xpath("//input[@id='email']");
 	public static By passwd = By.cssSelector("[id=passwd]");
 	public static By submit = By.cssSelector("[id=SubmitLogin]");
+	public static By logout = By.xpath("//a[@class='logout'][contains(.,'Sign out')]");
 	
 	public static WebDriver driver;
 	public static WebDriverWait waitE;
 	ExtentTest test;
+	
+	ReadConfig readconfig = new ReadConfig();
+//	public String browserName = readconfig.getbrowserName();
+	public String baseURL = readconfig.getApplicationURL();
 
-	@Parameters({"browser","baseURL"})
+	@Parameters({"browser"})
 	@BeforeClass
-	public void setup(String browserName,String url) throws InterruptedException {
+	public void setup(String browserName) throws InterruptedException {
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();	
@@ -50,7 +57,7 @@ public class BaseClass {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
-		driver.navigate().to(url);
+		driver.navigate().to(baseURL);
 		driver.manage().deleteAllCookies();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
@@ -67,10 +74,10 @@ public class BaseClass {
 	}
 	
 	public static void login(String Username, String Password) {
-		driver.findElement(signinbtn).click();
-		driver.findElement(email).sendKeys(Username);
-		driver.findElement(passwd).sendKeys(Password);
-		driver.findElement(submit).click();
+		click(signinbtn);
+		sendKeys(email,Username);
+		sendKeys(passwd,Password);
+		click(submit);
 	}
 	
 	//Click method with by element
@@ -95,6 +102,28 @@ public class BaseClass {
 	public static void sendKeys(WebElement element,String text) {
 		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
 		waitE.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(text);
+	}
+	
+	public static void selectIndex(WebElement element, int index) {
+
+		Select select = new Select(element);
+		select.selectByIndex(index);
+//		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
+//		waitE.until(ExpectedConditions.elementToBeSelected(element));
+
+	}
+	
+	public static void selectValue(WebElement element, String value) {
+
+		Select select = new Select(element);
+		select.selectByValue(value);
+//		waitE = new WebDriverWait(driver, Duration.ofSeconds(30));
+//		waitE.until(ExpectedConditions.elementToBeSelected(element));
+	}
+	
+	public static void selectVisibleText(WebElement element, String visibletext) {
+		Select select = new Select(element);
+		select.selectByValue(visibletext);
 	}
 	
 	@AfterClass

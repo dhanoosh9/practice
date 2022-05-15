@@ -4,11 +4,12 @@ import org.testng.annotations.Test;
 
 import page.ContactInfoPage;
 
+
+
 public class ContactInfoPageTest extends BaseClass {
 	
 	@Test
-	public void contactInfo() throws Exception {
-		ContactInfoPage.Contactus("dhanoosh369@gmail.com","ABCD123","My order is not yet delivered");
+	public void cpage() {
+		ContactInfoPage.Contactus("testers123@gmail.com", "ABC123", "something");
 	}
-	
 }
