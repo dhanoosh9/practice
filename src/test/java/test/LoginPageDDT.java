@@ -24,7 +24,7 @@ public class LoginPageDDT extends BaseClass{
 		String[][] logindata = new String[rownum][cellcount];
 		for(int i=1;i<=rownum;i++) {
 			for(int j=0;j<cellcount;j++) {
-				logindata[i-1][j] = XLUtils.getCellData(path, "Sheet1", i, j);
+				logindata[i-1][j] = XLUtils.getCellData(path,"Sheet1",i,j);
 			}
 		}
 		return logindata;

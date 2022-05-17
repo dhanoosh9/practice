@@ -1,76 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="66082" started-at="2022-05-15T10:53:02 IST" finished-at="2022-05-15T10:54:08 IST">
+  <suite name="Default suite" duration-ms="34289" started-at="2022-05-17T17:50:04 IST" finished-at="2022-05-17T17:50:39 IST">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="66082" started-at="2022-05-15T10:53:02 IST" finished-at="2022-05-15T10:54:08 IST">
-      <class name="test.LoginPageDDT">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:test.LoginPageDDT@4c15e7fd]" name="setup" is-config="true" duration-ms="21289" started-at="2022-05-15T10:53:02 IST" finished-at="2022-05-15T10:53:23 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="34289" started-at="2022-05-17T17:50:04 IST" finished-at="2022-05-17T17:50:39 IST">
+      <class name="demo.BootStrapDropDown">
+        <test-method status="PASS" signature="bootstrapdropdown()[pri:0, instance:demo.BootStrapDropDown@67b467e9]" name="bootstrapdropdown" duration-ms="34224" started-at="2022-05-17T17:50:04 IST" finished-at="2022-05-17T17:50:39 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signintestddt(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageDDT@4c15e7fd]" name="signintestddt" duration-ms="11442" started-at="2022-05-15T10:53:30 IST" data-provider="LoginData" finished-at="2022-05-15T10:53:41 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wexom38833@ishop2k.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signintestddt -->
-        <test-method status="PASS" signature="signintestddt(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageDDT@4c15e7fd]" name="signintestddt" duration-ms="9693" started-at="2022-05-15T10:53:42 IST" data-provider="LoginData" finished-at="2022-05-15T10:53:51 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testers123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signintestddt -->
-        <test-method status="PASS" signature="signintestddt(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageDDT@4c15e7fd]" name="signintestddt" duration-ms="15662" started-at="2022-05-15T10:53:51 IST" data-provider="LoginData" finished-at="2022-05-15T10:54:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testers1234@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signintestddt -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:test.LoginPageDDT@4c15e7fd]" name="teardown" is-config="true" duration-ms="907" started-at="2022-05-15T10:54:07 IST" finished-at="2022-05-15T10:54:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- test.LoginPageDDT -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- bootstrapdropdown -->
+      </class> <!-- demo.BootStrapDropDown -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

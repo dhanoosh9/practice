@@ -20,15 +20,15 @@
 		<class name="test.CartTest"></class>
 		<class name="test.CreateAccountPageDDT"></class>
 -->
-				<class name="test.LoginPageDDT"></class> 
+		<class name="test.LoginPageDDT"></class> 
 	</classes>
   </test> 
 <!--  
-<test name="FireFoxTest">
-  	<parameter name="username" value="wexom38833@ishop2k.com"></parameter>
-	<parameter name="password" value="test123"></parameter> 
-	<parameter name="browser" value="firefox"></parameter>
-	<parameter name="baseURL" value="http://automationpractice.com/index.php"></parameter>
+	<test name="FireFoxTest">
+  		<parameter name="username" value="wexom38833@ishop2k.com"></parameter>
+		<parameter name="password" value="test123"></parameter> 
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="baseURL" value="http://automationpractice.com/index.php"></parameter>
 	<classes>
 		
 		<class name="test.ContactInfoPageTest"></class>
